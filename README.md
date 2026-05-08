@@ -27,11 +27,13 @@ The system utilizes a directed acyclic graph (DAG) to pass a shared `ResearchSta
 
 ```mermaid
 graph TD
-    subgraph Multi-Agent Orchestration (LangGraph)
+    subgraph Orchestration [Multi-Agent Orchestration - LangGraph]
         A[User Query] --> B(Planner Agent)
         B -->|Generates JSON Search Strategy| C(Researcher Agent)
-        C <-->|Query| D[(ChromaDB Local Vector Memory)]
-        C <-->|Scrape if Cache Miss| E[Tavily Web Search API]
+        C -->|Query| D[(ChromaDB Local Vector Memory)]
+        D -->|Cached Data| C
+        C -->|Scrape if Cache Miss| E[Tavily Web Search API]
+        E -->|Live Data| C
         C -->|Raw Intelligence| F(Writer Agent)
         F -->|Synthesized Markdown| G[Final Executive Report]
     end
