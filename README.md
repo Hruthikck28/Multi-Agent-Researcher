@@ -21,9 +21,9 @@ You can interact with the live model here: **[Autonomous Business Intelligence](
 
 ---
 
-# 🏗️ System Architecture
+## 🏗️ System Architecture
 
-The platform utilizes a directed acyclic graph (DAG) to pass a shared `ResearchState` between autonomous nodes.
+The system utilizes a directed acyclic graph (DAG) to pass a shared `ResearchState` between autonomous nodes. 
 
 ```mermaid
 graph TD
@@ -36,7 +36,6 @@ graph TD
         F -->|Synthesized Markdown| G[Final Executive Report]
     end
 ```
-
 ---
 
 # 🧠 Agent Roles & Tooling
