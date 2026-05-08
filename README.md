@@ -18,6 +18,7 @@ The system autonomously researches live market trends, startup ecosystems, AI/te
 ---
 ### 🚀 Live Demo
 You can interact with the live model here: **[Autonomous Business Intelligence](https://huggingface.co/spaces/hruthikck/AI-Business-Intelligence)**
+<img width="1202" height="796" alt="Screenshot 2026-05-09 at 1 09 43 AM" src="https://github.com/user-attachments/assets/38d28f1d-5b84-462d-b342-a1153183953d" />
 
 ---
 
@@ -194,6 +195,7 @@ To evaluate report quality, the project includes a custom `evaluate.py` pipeline
 | Average Research Latency | **~36 Seconds** |
 | Memory Cache Retrieval | **Near-Instant** |
 | API Cost Reduction | **High via Caching** |
+<img width="1202" height="796" alt="Screenshot 2026-05-09 at 1 10 08 AM" src="https://github.com/user-attachments/assets/21f40956-54cb-442b-9493-21f2bc628699" />
 
 ### Benchmark Dataset
 Evaluated primarily on:
